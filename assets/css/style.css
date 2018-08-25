@@ -83,4 +83,19 @@ p {
 #defenderDiv {
     padding: 50px 0px;
     background-color: purple;
+    margin:10px 0;
+}
+
+#consoleDiv {
+    padding: 10px 10px;
+    background-color: gray;
+    margin:10px 0;
+}  
+
+#console1 {
+
+}
+
+#console2 {
+
 }
