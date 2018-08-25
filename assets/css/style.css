@@ -47,6 +47,7 @@ img {
     margin: 20px 20px;
     overflow: hidden;
     border-radius: 30px;
+    z-index:99;
 }
 
 .health {
@@ -85,8 +86,9 @@ img {
 
 #myCharDiv {
     background-color: goldenrod;
-    padding:50px 0px;
-    margin:10px 0;
+    padding:10px 0px;
+    margin:10px auto;
+    text-align:center;
 }
 
 #chooseText {
@@ -100,9 +102,10 @@ img {
 }
 
 #enemiesRemaining {
-    padding:50px 0px;
+    padding:10px 0px;
     background-color: indianred;
-    margin:10px 0;
+    margin:10px auto;
+    text-align:center;
 }
 
 #fightSectionText {
