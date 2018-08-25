@@ -4,12 +4,18 @@ let mortyHealth = 100;
 let bethHealth = 100;
 let jerryHealth = 100;
 
+let rickAttack = 10;
+let mortyAttack = 10;
+let bethAttack = 10;
+let jerryAttack = 10;
 
-// sets phase to character select
-let stage = 0;
 
-// hides other elements while selecting character
-$(".stage1").hide();
+let myBaseAttack = 0;
+let myCharAttack = 0;
+
+
+
+
 
 
 // sets health text to initial health
@@ -18,9 +24,13 @@ $("#mortyHealth").text(mortyHealth);
 $("#bethHealth").text(bethHealth);
 $("#jerryHealth").text(jerryHealth);
 
+// sets phase to character select
+let stage = 0;
 
+// hides other elements while selecting character
+$(".stage1").hide();
 
-// character select function, appends clicked-on character to myCharDiv, ends choosingChar phase.
+// character and enemy select function
 $(".character").on("click", function () {
 
     if (stage === 0) {
@@ -34,14 +44,18 @@ $(".character").on("click", function () {
 
     } else if (stage === 1) {
         $(".stage2").show();
+        $(".stage3").hide();
         $("#defenderDiv").append(this);
-        $("#currentCharacterText").show();
-        $("#myCharDiv").show();
-        $("#enemiesRemainingText").hide();
-        $("#enemiesRemaining").hide();
         stage++;
         
-    };
+    }
+});
+
+$("#attackButton").on("click", function(){
+
+
+
+
 });
 
 

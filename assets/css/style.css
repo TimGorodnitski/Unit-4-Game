@@ -5,11 +5,14 @@ main {
     background-color:lemonchiffon;
     border: 4px dashed blue;
     padding: 40px;
+    overflow: hidden;
 }
 
 .container {
+    min-height:1080px;
     padding:40px;
     background-color: aqua;
+    overflow: hidden;
 }
 
 header {
@@ -60,16 +63,9 @@ img {
     background-color:white;
     padding:3px;
     border: 1px solid green;
-    text-align: center;
+    text-align: cen ter;
 
 }
-
-
-
-
-
-
-
 
 #charSelect {
     min-height: 100px;
@@ -127,6 +123,7 @@ img {
     padding: 50px 0px;
     background-color: purple;
     margin:10px 0;
+    text-align:center;
 }
 
 #consoleDiv {
