@@ -1,0 +1,86 @@
+main {
+    max-width:960px;
+    margin:auto auto;
+    position:relative;
+    background-color:lemonchiffon;
+    border: 4px dashed blue;
+    padding: 40px;
+}
+
+.container {
+    padding:40px;
+    background-color: aqua;
+}
+
+header {
+    line-height: 1em;
+    background-color:lightblue;
+    text-align:center;
+    width:100%;
+    padding:30px 0;
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#gameDiv {
+    background-color: lightcyan;
+    padding:30px;
+}
+
+#charSelect {
+    min-height: 100px;
+    background-color: mediumturquoise;
+    margin:10px 0;
+
+}
+
+#currentCharacterText {
+    font-size:25px;
+    color: green;
+}
+
+#myCharDiv {
+    background-color: goldenrod;
+    padding:50px 0px;
+    margin:10px 0;
+}
+
+#chooseText {
+    color: blue;
+    font-size:25px;
+}
+
+#enemiesRemainingText {
+    font-size:25px;
+    color:red;
+}
+
+#enemiesRemaining {
+    padding:50px 0px;
+    background-color: indianred;
+    margin:10px 0;
+}
+
+#fightSectionText {
+    font-size:25px;
+    color:red;
+}
+
+#attackButton {
+    padding: 10px 30px;
+    margin:10px 0;
+}
+
+#defenderText {
+    font-size:25px;
+    color: chartreuse;
+}
+
+#defenderDiv {
+    padding: 50px 0px;
+    background-color: purple;
+}
