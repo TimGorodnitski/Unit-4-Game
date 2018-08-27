@@ -1,28 +1,33 @@
 // initial health values
-let rickHealth = 100;
-let mortyHealth = 100;
-let bethHealth = 100;
-let jerryHealth = 100;
+let rickHealth = 110;
+let mortyHealth = 90;
+let bethHealth = 80;
+let jerryHealth = 75;
 
 let rickAttack = 10;
+let rickCounter = 5;
 let mortyAttack = 10;
+let mortyCounter = 5;
 let bethAttack = 10;
+let bethCounter = 5;
 let jerryAttack = 10;
-
+let jerryCounter = 5;
 
 let myBaseAttack = 0;
 let myCharAttack = 0;
+let myCharHealth = 0;
 
-
+let opponentHealth = 0;
+let opponentCounter = 0;
 
 
 
 
 // sets health text to initial health
-$("#rickHealth").text(rickHealth);
-$("#mortyHealth").text(mortyHealth);
-$("#bethHealth").text(bethHealth);
-$("#jerryHealth").text(jerryHealth);
+// $("#rickHealth").text(rickHealth);
+// $("#mortyHealth").text(mortyHealth);
+// $("#bethHealth").text(bethHealth);
+// $("#jerryHealth").text(jerryHealth);
 
 // sets phase to character select
 let stage = 0;
@@ -35,6 +40,7 @@ $(".character").on("click", function () {
 
     if (stage === 0) {
 
+        myCharHealth = $(this).find('span').text();
         $(".stage1").show();
         $(".stage2").hide();
         $("#enemiesRemaining").append($(".character"));
@@ -43,16 +49,24 @@ $(".character").on("click", function () {
         stage++;
 
     } else if (stage === 1) {
+
+
+        opponentHealth = $(this).find('span').text();
+        opponentCounter = 
+        $("#defenderDiv").append(this);
         $(".stage2").show();
         $(".stage3").hide();
-        $("#defenderDiv").append(this);
+
         stage++;
-        
+
     }
 });
 
-$("#attackButton").on("click", function(){
+$("#attackButton").on("click", function () {
 
+
+
+    opponentHealth
 
 
 
