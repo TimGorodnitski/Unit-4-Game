@@ -40,7 +40,7 @@ $(".character").on("click", function () {
 
     if (stage === 0) {
 
-        myCharHealth = $(this).find('span').text();
+        myCharHealth = $(this).find("span.charHealth").text();
         $(".stage1").show();
         $(".stage2").hide();
         $("#enemiesRemaining").append($(".character"));
@@ -51,12 +51,11 @@ $(".character").on("click", function () {
     } else if (stage === 1) {
 
 
-        opponentHealth = $(this).find('span').text();
-        opponentCounter = 
+        opponentHealth = $(this).find('span.charHealth').text();
+        opponentCounter = $(this).find('span.charDefense').text();
         $("#defenderDiv").append(this);
         $(".stage2").show();
         $(".stage3").hide();
-
         stage++;
 
     }
@@ -64,9 +63,6 @@ $(".character").on("click", function () {
 
 $("#attackButton").on("click", function () {
 
-
-
-    opponentHealth
 
 
 
