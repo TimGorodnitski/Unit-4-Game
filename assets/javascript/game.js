@@ -25,7 +25,7 @@ let opponentHealth = 0;
 let opponentDefense = 0;
 
 
-
+$("#gameover").hide();
 
 // // sets text to initial values
 $("#rickHealth").text(rickHealth);
@@ -85,15 +85,21 @@ $(".character").on("click", function () {
 
 $("#attackButton").on("click", function () {
 
+    $(".console1").text("You attacked for " + myCharAttack + " damage!")
     opponentHealth -= myCharAttack;
     $(".myOpp").find('span.charHealth').text(opponentHealth);
-    if (opponentHealth <= 0) {
-        $(".myOpp").remove();
-        stage = 1;
-        $(".stage2").hide();
-        $(".stage4").show();
-    };
-    myCharHealth -= opponentDefense;
+        if (opponentHealth <= 0) {
+            $("#enemiesRemainingText").text("Your Opponent Died! Choose Another!")
+            $(".myOpp").remove();
+            stage = 1;
+            $(".stage2").hide();
+            $(".stage4").show();
+        };
+        if (opponentHealth >= 0){myCharHealth -= opponentDefense;};
+        if (myCharHealth <= 0) {
+            $("#gameDiv").hide();
+            $("#gameover").show();
+        };
     $(".myChar").find('span.charHealth').text(myCharHealth);
     attackCount++;
     myCharAttack = myBaseAttack * attackCount;
