@@ -53,7 +53,7 @@ img {
     z-index:99;
 }
 
-.health {
+.stats {
     float:left;
     position: absolute;
     left:40%;
@@ -63,7 +63,7 @@ img {
     background-color:white;
     padding:3px;
     border: 1px solid green;
-    text-align: cen ter;
+    text-align: center;
 
 }
 
